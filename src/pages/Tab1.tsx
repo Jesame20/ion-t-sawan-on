@@ -19,11 +19,11 @@ const Tab1: React.FC = () => {
         <IonCard>
       <img alt="Silhouette of mountains" src="../src/assets/img/jprof.jpg" />
       <IonCardHeader>
-        <IonCardTitle>Card Title</IonCardTitle>
-        <IonCardSubtitle>Card Subtitle</IonCardSubtitle>
+        <IonCardTitle>Jesame C. Sawan-on</IonCardTitle>
+        <IonCardSubtitle>Also known as "Saming"</IonCardSubtitle>
       </IonCardHeader>
 
-      <IonCardContent>Here's a small text description for the card content. Nothing more, nothing less.</IonCardContent>
+      <IonCardContent>Motto in Life: "If you can DREAM it, you can DO it"</IonCardContent>
     </IonCard>
       </IonContent>
     </IonPage>
