@@ -26,7 +26,7 @@ const Tab1: React.FC = () => {
 
       <IonCardContent>Motto in Life: "If you can DREAM it, you can DO it"</IonCardContent>
 
-      <IonButton id="present-alert" expand='full'>Click Me</IonButton>
+      <IonButton id="present-alert" color="warning" expand='full'>Click Me</IonButton>
       <IonAlert
         trigger="present-alert"
         header="A Short Title Is Best"
