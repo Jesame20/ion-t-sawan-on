@@ -1,5 +1,5 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar,IonCard, IonCardContent, IonCardHeader, 
-  IonCardSubtitle, IonCardTitle, IonAlert, IonButton } from '@ionic/react';
+  IonCardSubtitle, IonCardTitle, IonAlert, IonButton, IonActionSheet } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Tab1.css';
 
@@ -34,6 +34,34 @@ const Tab1: React.FC = () => {
         message="A message should be a short, complete sentence."
         buttons={['Action']}
       ></IonAlert>
+
+<IonButton id="open-action-sheet" expand='full'>Open</IonButton>
+      <IonActionSheet
+        trigger="open-action-sheet"
+        header="Actions"
+        buttons={[
+          {
+            text: 'Delete',
+            role: 'destructive',
+            data: {
+              action: 'delete',
+            },
+          },
+          {
+            text: 'Share',
+            data: {
+              action: 'share',
+            },
+          },
+          {
+            text: 'Cancel',
+            role: 'cancel',
+            data: {
+              action: 'cancel',
+            },
+          },
+        ]}
+      ></IonActionSheet>
     </IonCard>
       </IonContent>
     </IonPage>
