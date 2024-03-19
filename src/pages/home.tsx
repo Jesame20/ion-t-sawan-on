@@ -1,6 +1,7 @@
 import {
     //Initial Components
-    IonContent, IonHeader, IonPage, IonTitle, IonToolbar,
+    IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonCardContent, IonCardHeader, 
+    IonCardSubtitle, IonCardTitle,
 } from '@ionic/react';
 
 // CSS
@@ -13,6 +14,13 @@ import {
           <IonToolbar>
             <IonTitle>Home</IonTitle>
           </IonToolbar>
+          <IonCardHeader>
+        <IonCardTitle>Jesame C. Sawan-on</IonCardTitle>
+        <IonCardSubtitle>Student</IonCardSubtitle>
+      </IonCardHeader>
+
+      <IonCardContent>WELCOME TO MY APP!</IonCardContent>
+
         </IonHeader>
         <IonContent fullscreen>
           <IonHeader collapse="condense">
