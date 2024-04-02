@@ -1,8 +1,15 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import React, { useState } from 'react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton} from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Tab2.css';
 
 const Tab2: React.FC = () => {
+  const [clickCount, setClickCount] = useState(0);
+
+  const incrementClickCount = () => {
+    setClickCount(clickCount + 1);
+  };
+
   return (
     <IonPage>
       <IonHeader>
@@ -16,6 +23,10 @@ const Tab2: React.FC = () => {
             <IonTitle size="large">Tab 2</IonTitle>
           </IonToolbar>
         </IonHeader>
+        <div>
+          <IonButton onClick={incrementClickCount}>Click Me</IonButton>
+          <p>Click Count: {clickCount}</p>
+        </div>
       </IonContent>
     </IonPage>
   );
