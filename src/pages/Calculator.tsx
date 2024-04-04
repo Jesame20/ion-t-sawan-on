@@ -5,7 +5,7 @@ import './Calculator.css';
 const Calculator = () => {
   const [input, setInput] = useState('');
 
-  const handleClick = (value) => {
+  const handleClick = (value: string) => {
     setInput(input + value);
   };
 
