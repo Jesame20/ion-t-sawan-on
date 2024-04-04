@@ -31,6 +31,34 @@ const Tab3 = () => {
       </IonRow>
       <IonRow>
         <IonCol size="3">
+          <IonButton className="btn" onClick={() => handleClick('1')}>1</IonButton>
+        </IonCol>
+        <IonCol size="3">
+          <IonButton className="btn" onClick={() => handleClick('2')}>2</IonButton>
+        </IonCol>
+        <IonCol size="3">
+          <IonButton className="btn" onClick={() => handleClick('3')}>3</IonButton>
+        </IonCol>
+        <IonCol size="3">
+          <IonButton className="operator" onClick={() => handleClick('/')}>/</IonButton>
+        </IonCol>
+      </IonRow>
+      <IonRow>
+        <IonCol size="3">
+          <IonButton className="btn" onClick={() => handleClick('4')}>4</IonButton>
+        </IonCol>
+        <IonCol size="3">
+          <IonButton className="btn" onClick={() => handleClick('5')}>5</IonButton>
+        </IonCol>
+        <IonCol size="3">
+          <IonButton className="btn" onClick={() => handleClick('6')}>6</IonButton>
+        </IonCol>
+        <IonCol size="3">
+          <IonButton className="operator" onClick={() => handleClick('*')}>*</IonButton>
+        </IonCol>
+      </IonRow>
+      <IonRow>
+        <IonCol size="3">
           <IonButton className="btn" onClick={() => handleClick('7')}>7</IonButton>
         </IonCol>
         <IonCol size="3">
@@ -40,20 +68,29 @@ const Tab3 = () => {
           <IonButton className="btn" onClick={() => handleClick('9')}>9</IonButton>
         </IonCol>
         <IonCol size="3">
-          <IonButton className="operator" onClick={() => handleClick('/')}>/</IonButton>
+          <IonButton className="operator" onClick={() => handleClick('-')}>-</IonButton>
         </IonCol>
       </IonRow>
       <IonRow>
-        {/* Other buttons */}
+        <IonCol size="3">
+          <IonButton className="btn" onClick={() => handleClick('0')}>0</IonButton>
+        </IonCol>
+        <IonCol size="3">
+          <IonButton className="btn" onClick={() => handleClick('.')}>.</IonButton>
+        </IonCol>
+        <IonCol size="3">
+          <IonButton className="operator" onClick={handleCalculate}>=</IonButton>
+        </IonCol>
+        <IonCol size="3">
+          <IonButton className="operator" onClick={() => handleClick('+')}>+</IonButton>
+        </IonCol>
       </IonRow>
       <IonRow>
-        {/* Other rows of buttons */}
-      </IonRow>
-      <IonRow>
-        {/* Equal and Clear buttons */}
+        <IonCol size="12">
+          <IonButton className="clear" onClick={handleClear}>Clear</IonButton>
+        </IonCol>
       </IonRow>
     </IonGrid>
   );
 };
-
 export default Tab3;
