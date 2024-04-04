@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { IonGrid, IonRow, IonCol, IonButton, IonInput } from '@ionic/react';
 import './Tab3.css';
 
-const Calculator = () => {
+const Tab3 = () => {
   const [input, setInput] = useState('');
 
   const handleClick = (value: string) => {
@@ -56,4 +56,4 @@ const Calculator = () => {
   );
 };
 
-export default Calculator;
+export default Tab3;
