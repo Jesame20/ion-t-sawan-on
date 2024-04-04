@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { IonGrid, IonRow, IonCol, IonButton, IonInput } from '@ionic/react';
+import { IonGrid, IonRow, IonCol, IonButton, IonInput, IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/react';
 import './Tab3.css';
 
 const Tab3 = () => {
@@ -23,8 +23,16 @@ const Tab3 = () => {
   };
 
   return (
-    <IonGrid className="calculator">
-      <IonRow>
+    <IonPage>
+      <IonHeader>
+        <IonToolbar>
+          <IonTitle>Calculator</IonTitle>
+        </IonToolbar>
+      </IonHeader>
+      <IonContent fullscreen>
+        <div className="center-content">
+          <IonGrid className="calculator">
+            <IonRow>
         <IonCol size="12">
           <IonInput className="display" value={input} readonly></IonInput>
         </IonCol>
@@ -91,6 +99,9 @@ const Tab3 = () => {
         </IonCol>
       </IonRow>
     </IonGrid>
+     </div>
+     </IonContent>
+   </IonPage>
   );
 };
 export default Tab3;
