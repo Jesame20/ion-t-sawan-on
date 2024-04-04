@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { IonGrid, IonRow, IonCol, IonButton, IonInput } from '@ionic/react';
-import './Calculator.css';
+import './Tab3.css';
 
 const Calculator = () => {
   const [input, setInput] = useState('');
