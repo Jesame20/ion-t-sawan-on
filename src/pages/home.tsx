@@ -32,7 +32,7 @@ import {
   <div className="feature">
     <h3>Efficient Calculations</h3>
     <p>Our Calculator tool makes complex calculations a breeze.</p>
-    <img src="path/to/your/second_image.jpg" alt="Efficient Calculations" />
+    <img src="/src/assets\img/calculator.png" alt="Efficient Calculations" />
   </div>
 </section>
       <footer>
