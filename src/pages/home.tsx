@@ -27,7 +27,7 @@ import {
   <div className="feature">
     <h3>Track Your Progress</h3>
     <p>Use our Click Counter to keep track of your progress.</p>
-    <img src="../src/assets/clickcounter.png" alt="Track Your Progress" />
+    <img src="/src/assets\img/clickcounter.png" alt="Track Your Progress" />
   </div>
   <div className="feature">
     <h3>Efficient Calculations</h3>
