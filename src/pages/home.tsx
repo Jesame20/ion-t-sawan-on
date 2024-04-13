@@ -36,13 +36,14 @@ import './home.css';
     <img src="/src/assets\img/calculator.png" alt="Efficient Calculations" />
   </div>
 </section>
-      <footer>
-        <p>Contact me for more info: jcsawanonshs@gmail.com</p>
-        <div className="social-links">
-          <a href="#">Facebook</a>
-          <a href="#">Instagram</a>
-        </div>
-      </footer>
+<footer>
+    <p>Contact me for more info: jcsawanonshs@gmail.com</p>
+    <div className="social-links">
+        <a href="https://www.facebook.com/angel.sawanon" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://www.instagram.com/urgirl.saming/" target="_blank" rel="noopener noreferrer">Instagram</a>
+    </div>
+</footer>
+
     </div>
     </IonContent>
    </IonPage>
