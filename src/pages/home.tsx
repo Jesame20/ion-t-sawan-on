@@ -6,7 +6,8 @@ import {
 } from '@ionic/react';
 
 // CSS
-//import './profile.css';
+import './home.css';
+
 
   const Home: React.FC = () => {
     return (
