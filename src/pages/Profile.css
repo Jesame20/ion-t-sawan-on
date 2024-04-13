@@ -1,0 +1,73 @@
+/* General styles */
+.profile-cover-container {
+    position: relative;
+    text-align: center;
+    border: 2px solid #ccc; /* Border around the container */
+    border-radius: 8px; /* Optional: Add rounded corners to the container */
+    padding: 20px; /* Optional: Add padding inside the container */
+}
+
+/* Cover photo */
+.cover-photo img {
+    width: 100%;
+    height: 200px; /* Adjust height as desired */
+    object-fit: cover;
+}
+
+/* Profile info container */
+.profile-info-container {
+    display: flex;
+    align-items: center;
+    margin-top: -30px; /* Adjust margin-top to place the profile info over the cover photo */
+}
+
+/* Profile picture */
+.profile-picture {
+    width: 115px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid white; /* Add white border around profile picture */
+    overflow: hidden;
+    margin-right: 14px;
+}
+
+/* Profile info */
+.profile-info {
+    text-align: left;
+    color: rgb(1, 12, 22);
+    font-size: small;
+    margin-top: 30px;
+}
+
+.profile-info h2, h3, p {
+    margin: 0;
+}
+
+/* Posts grid */
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
+    gap: 10px; /* Gap between grid items */
+    padding: 20px; /* Add padding around the grid */
+    margin-top: 20px; /* Increase margin-top to push the post grid lower */
+}
+
+.posts-grid img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Buttons container */
+.buttons-container {
+    padding: 20px;
+    text-align: center;
+    margin-top: 5px; /* Space between posts grid and buttons */
+}
+
+/* Styling buttons */
+.buttons-container ion-button {
+    margin: 10px;
+}
