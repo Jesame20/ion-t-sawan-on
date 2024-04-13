@@ -17,6 +17,9 @@
 .click-counter-text {
     font-weight: bold;
     color: #333;
+    padding: 10px; /* Add padding to create space around the text */
+    border: 1px solid #ccc; /* Add a light gray border */
+    border-radius: 5px; /* Add rounded corners */
 }
 
 /* Style for the reset button */
