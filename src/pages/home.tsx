@@ -2,8 +2,9 @@ import React from 'react';
 import {
     //Initial Components
     IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonCardContent, IonCardHeader, 
-    IonCardSubtitle, IonCardTitle,
+    IonCardSubtitle, IonCardTitle, IonCard, IonList, IonItem,IonThumbnail, IonLabel
 } from '@ionic/react';
+import { IonRouterLink } from '@ionic/react';
 
 // CSS
 import './home.css';
@@ -23,27 +24,43 @@ import './home.css';
         <h1>Welcome to My App</h1>
         <p>Your one-stop solution for all your needs.</p>
       </header>
-      <section className="features-section">
-  <h2>Features</h2>
-  <div className="feature">
-    <h3>Track Your Progress</h3>
-    <p>Use our Click Counter to keep track of your progress.</p>
-    <img src="/src/assets\img/clickcounter.png" alt="Track Your Progress" />
-  </div>
-  <div className="feature">
-    <h3>Efficient Calculations</h3>
-    <p>Our Calculator tool makes complex calculations a breeze.</p>
-    <img src="/src/assets\img/calculator.png" alt="Efficient Calculations" />
-  </div>
-</section>
-<footer>
-    <p>Contact me for more info: jcsawanonshs@gmail.com</p>
-    <div className="social-links">
-        <a href="https://www.facebook.com/angel.sawanon" target="_blank" rel="noopener noreferrer">Facebook</a>
-        <a href="https://www.instagram.com/urgirl.saming/" target="_blank" rel="noopener noreferrer">Instagram</a>
-    </div>
-</footer>
-
+      <IonCard>
+      <IonCardHeader>
+      </IonCardHeader>
+      <IonCardContent>
+        <IonList>
+        <IonRouterLink href="/Clickcounter">
+              <IonItem>
+                  <IonThumbnail slot="start">
+                    <img alt="Silhouette of mountains" src="https://img.freepik.com/premium-vector/click-arrow-touch-point-logo-template-design-vector-emblem-design-concept-creative-symbol_20029-363.jpg" />
+                  </IonThumbnail>
+                  <IonLabel>Click Counter</IonLabel>
+              </IonItem>
+                </IonRouterLink>
+              
+              <IonRouterLink href="/Calculator">
+              <IonItem>
+                <IonThumbnail slot="start">
+                    <img id="img" alt="Silhouette of mountains" src="https://cdn-icons-png.flaticon.com/512/1011/1011863.png" />
+                  </IonThumbnail>
+                  <IonLabel>Calculator</IonLabel>
+              </IonItem>
+                </IonRouterLink>
+              <IonItem>
+                <IonThumbnail slot="start">
+                  <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+                </IonThumbnail>
+                <IonLabel>Blank</IonLabel>
+              </IonItem>
+              <IonItem lines="none">
+                <IonThumbnail slot="start">
+                  <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+                </IonThumbnail>
+                <IonLabel>Blank</IonLabel>
+              </IonItem>
+        </IonList>
+      </IonCardContent>
+    </IonCard>
     </div>
     </IonContent>
    </IonPage>
