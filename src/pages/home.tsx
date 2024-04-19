@@ -43,13 +43,16 @@ import './home.css';
                   </IonThumbnail>
                   <IonLabel>Calculator</IonLabel>
               </IonItem>
-                </IonRouterLink>
+                </IonRouterLink >
+
+                <IonRouterLink href="/Todolist">
               <IonItem>
                 <IonThumbnail slot="start">
-                  <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+                  <img alt="Silhouette of mountains" src="https://cdn-icons-png.flaticon.com/512/7692/7692809.png" />
                 </IonThumbnail>
-                <IonLabel>Blank</IonLabel>
+                <IonLabel>Todo List</IonLabel>
               </IonItem>
+              </IonRouterLink >
               <IonItem lines="none">
                 <IonThumbnail slot="start">
                   <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />

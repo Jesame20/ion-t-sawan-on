@@ -23,7 +23,7 @@ const ClickCounter: React.FC = () => {
   };
 
   return (
-    <IonPage>
+    <IonPage> 
       <IonHeader>
         <IonToolbar>
           <IonTitle>Click Counter</IonTitle>
