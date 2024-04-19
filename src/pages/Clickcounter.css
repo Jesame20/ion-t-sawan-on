@@ -1,11 +1,10 @@
 /* clickcounter.css */
 
-/* Style for the overall card content */
 .click-counter {
     padding: 20px;
 }
 
-/* Container for click count and reset button */
+
 .click-count-reset-container {
     display: flex;
     align-items: center;
@@ -13,24 +12,24 @@
     margin-bottom: 20px;
 }
 
-/* Style for the click counter text */
+
 .click-counter-text {
     font-weight: bold;
     color: #333;
-    padding: 10px; /* Add padding to create space around the text */
-    border: 1px solid #ccc; /* Add a light gray border */
-    border-radius: 5px; /* Add rounded corners */
+    padding: 10px; 
+    border: 1px solid #ccc;
+    border-radius: 5px; 
 }
 
-/* Style for the reset button */
+
 .reset-button {
     margin-left: 10px;
-    background-color: #7044ff;
+    background-color: #ff5144;
     color: white;
     text-align: center;
 }
 
-/* Style for the increment button */
+
 .click-button {
     background-color: #3880ff;
     color: white;

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { IonGrid, IonRow, IonCol, IonButton, IonInput, IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/react';
+import { IonGrid, IonRow, IonCol, IonButton, IonInput, IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonIcon, IonLabel, IonBackButton } from '@ionic/react';
 import './Calculator.css';
-
+import { arrowBack, arrowBackCircleOutline } from 'ionicons/icons';
 const Calculator = () => {
   const [input, setInput] = useState('');
 
@@ -24,11 +24,16 @@ const Calculator = () => {
 
   return (
     <IonPage>
-      <IonHeader>
+     <IonHeader>
         <IonToolbar>
-          <IonTitle>Calculator</IonTitle>
+          <IonTitle>Click Counter</IonTitle>
         </IonToolbar>
-      </IonHeader>
+        <IonToolbar>
+      <IonButton routerDirection="root" routerLink="/home">
+          <IonIcon aria-hidden="true" icon={arrowBack} />
+          </IonButton>
+        </IonToolbar>
+    </IonHeader>
       <IonContent fullscreen>
         <div className="center-content">
           <IonGrid className="calculator">

@@ -1,7 +1,7 @@
 import React from 'react';
 import {
     //Initial Components
-    IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonCardContent, IonCardHeader, 
+    IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonCardContent,  
     IonCardSubtitle, IonCardTitle, IonCard, IonList, IonItem,IonThumbnail, IonLabel
 } from '@ionic/react';
 import { IonRouterLink } from '@ionic/react';
@@ -25,8 +25,6 @@ import './home.css';
         <p>Your one-stop solution for all your needs.</p>
       </header>
       <IonCard>
-      <IonCardHeader>
-      </IonCardHeader>
       <IonCardContent>
         <IonList>
         <IonRouterLink href="/Clickcounter">
