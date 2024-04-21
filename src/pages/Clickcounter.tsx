@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './style.css';
+import './Clickcounter.css';
 import {
   IonButton,
   IonCard,
@@ -36,6 +37,10 @@ const ClickCounter: React.FC = () => {
           </IonButton>
         </IonToolbar>
       <IonContent fullscreen>
+      <div className="home-container">
+      <header>
+        <h1>Click, count, conquer</h1>
+      </header>
         <IonCard>
           <IonCardContent className="click-counter">
           
@@ -44,10 +49,10 @@ const ClickCounter: React.FC = () => {
               <div className="click-counter-text">Click Count: {clickCount}</div>
               <IonButton
                 onClick={resetClickCount}
-                color="secondary"
+                color="danger"
                 className="reset-button"
               >
-                Reset Counter
+                Reset Count
               </IonButton>
             </div>
 
@@ -58,10 +63,11 @@ const ClickCounter: React.FC = () => {
               expand="full"
               className="click-button"
             >
-              Click Me
+              Click Here
             </IonButton>
           </IonCardContent>
         </IonCard>
+        </div>
       </IonContent>
     </IonPage>
   );

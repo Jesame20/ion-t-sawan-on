@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './style.css';
+import './Todolist.css';
 import {
   IonButton,
   IonCard,
@@ -63,6 +64,10 @@ const TodoList: React.FC = () => {
           </IonButton>
         </IonToolbar>
       <IonContent fullscreen>
+      <div className="home-container">
+      <header>
+        <h1>Organize, prioritize, conquer</h1>
+      </header>
         <IonCard>
           <IonCardContent className="todo-list">
             {todos.map((todo) => (
@@ -98,6 +103,7 @@ const TodoList: React.FC = () => {
             </form>
           </IonCardContent>
         </IonCard>
+        </div>
       </IonContent>
     </IonPage>
   );

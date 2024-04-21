@@ -2,9 +2,24 @@
 
 .click-counter {
     padding: 20px;
-    background-color: #727374;
+    background-color: #333;
+}
+header {
+    text-align: center;
+    background-color: #dcdee0;
+    padding: 20px;
 }
 
+header h1 {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #666;
+}
 
 .click-count-reset-container {
     display: flex;
@@ -16,26 +31,12 @@
 
 .click-counter-text {
     font-weight: bold;
-    color: #0e0d0d;
+    color: #f7f5f5;
     padding: 10px; 
-    border: 1px solid #0a0808;
+    border: 1px solid #f9f4f4;
     border-radius: 5px; 
 }
 
-
-.reset-button {
-    margin-left: 10px;
-    background-color: #ff5144;
-    color: white;
-    text-align: center;
-}
-
-
-.click-button {
-    background-color: #3880ff;
-    color: white;
-    text-align: center;
-}
 .IonPage {
     background-color: #c89579;
 }

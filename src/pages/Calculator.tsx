@@ -36,8 +36,11 @@ const Calculator = () => {
         </IonToolbar>
     </IonHeader>
       <IonContent fullscreen>
-        <div className="center-content">
-          <IonGrid className="calculator">
+        <div className="home-container" >
+        <header>
+        <h1>Solve equations in a snap</h1>
+      </header>
+      <IonGrid className="calculator" style={{ marginTop: '2rem' }}>
             <IonRow>
         <IonCol size="12">
           <IonInput className="display" value={input} readonly></IonInput>

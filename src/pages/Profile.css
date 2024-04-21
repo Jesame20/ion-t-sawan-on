@@ -1,27 +1,24 @@
-/* General styles */
 .profile-cover-container {
     position: relative;
     text-align: center;
-    border: 2px solid #ccc; /* Border around the container */
-    border-radius: 8px; /* Optional: Add rounded corners to the container */
-    padding: 20px; /* Optional: Add padding inside the container */
+    border-radius: 0 0 8px 8px;
+    padding: 20px; 
+    background-color: black;
 }
 
-/* Cover photo */
 .cover-photo img {
     width: 100%;
     height: 200px; 
     object-fit: cover;
+    border-radius: 8px; 
 }
 
-/* Profile info container */
 .profile-info-container {
     display: flex;
     align-items: center;
     margin-top: -30px; 
 }
 
-/* Profile picture */
 .profile-picture {
     width: 115px;
     height: 100px;
@@ -31,7 +28,6 @@
     margin-right: 14px;
 }
 
-/* Profile info */
 .profile-info {
     text-align: left;
     color: rgb(235, 240, 245);
@@ -43,7 +39,6 @@
     margin: 0;
 }
 
-/* Posts grid */
 .posts-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
@@ -60,14 +55,12 @@
     object-fit: cover;
 }
 
-/* Buttons container */
 .buttons-container {
     padding: 20px;
     text-align: center;
     margin-top: 5px; 
 }
 
-/* Styling buttons */
 .buttons-container ion-button {
     margin: 10px;
 }

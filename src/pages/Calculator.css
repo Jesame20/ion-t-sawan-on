@@ -1,42 +1,28 @@
 .calculator {
   width: 300px;
   margin: 0 auto;
-  background-color: #8a87878a; 
+  background-color: #205b7a; 
   padding: 20px; 
   border-radius: 10px; 
 }
-
-ion-back-button {
-  font-size: 1px;
-  padding: none;
+header {
+  text-align: center;
+  background-color: #dcdee0;
+  padding: 20px;
 }
+
+header h1 {
+  font-size: 2.5rem;
+  color: #333;
+  font-weight: bold;
+}
+
 .display {
   text-align: right;
   font-size: 24px;
-  background-color: #f8f2f2;
+  background-color: #26282a;
   border: none;
   border-radius: 8px;
   padding: 10px;
   margin-bottom: 10px;
-}
-.btn {
-  width: 100%;
-  font-size: 20px;
-  margin-bottom: 10px;
-
-}
-.operator, .clear {
-  width: 100%;
-  font-size: 20px;
-  margin-bottom: 10px;
-  background: #FF9500;
-  color: white;
-}
-
-.clear {
-  background-color: #621706;
-}
-
-.btn:hover, .operator:hover, .clear:hover {
-  background-color: #f0f0f0;
 }
