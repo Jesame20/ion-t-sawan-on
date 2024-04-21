@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { IonGrid, IonRow, IonCol, IonButton, IonInput, IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/react';
+import './style.css';
+import { IonGrid, IonRow, IonCol, IonButton, IonInput, IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonIcon, IonLabel, IonBackButton } from '@ionic/react';
 import './Calculator.css';
-
+import { arrowBack, arrowBackCircleOutline } from 'ionicons/icons';
 const Calculator = () => {
   const [input, setInput] = useState('');
 
@@ -23,15 +24,23 @@ const Calculator = () => {
   };
 
   return (
-    <IonPage>
-      <IonHeader>
+    <IonPage className="general-background click-counter-page">
+     <IonHeader>
         <IonToolbar>
-          <IonTitle>Calculator</IonTitle>
+          <IonTitle>Click Counter</IonTitle>
         </IonToolbar>
-      </IonHeader>
+        <IonToolbar>
+      <IonButton routerDirection="root" routerLink="/home">
+          <IonIcon aria-hidden="true" icon={arrowBack} />
+          </IonButton>
+        </IonToolbar>
+    </IonHeader>
       <IonContent fullscreen>
-        <div className="center-content">
-          <IonGrid className="calculator">
+        <div className="home-container" >
+        <header>
+        <h1>Solve equations in a snap</h1>
+      </header>
+      <IonGrid className="calculator" style={{ marginTop: '2rem' }}>
             <IonRow>
         <IonCol size="12">
           <IonInput className="display" value={input} readonly></IonInput>

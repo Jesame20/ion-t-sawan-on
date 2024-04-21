@@ -1,11 +1,26 @@
 /* clickcounter.css */
 
-/* Style for the overall card content */
 .click-counter {
+    padding: 20px;
+    background-color: #333;
+}
+header {
+    text-align: center;
+    background-color: #dcdee0;
     padding: 20px;
 }
 
-/* Container for click count and reset button */
+header h1 {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
 .click-count-reset-container {
     display: flex;
     align-items: center;
@@ -13,26 +28,15 @@
     margin-bottom: 20px;
 }
 
-/* Style for the click counter text */
+
 .click-counter-text {
     font-weight: bold;
-    color: #333;
-    padding: 10px; /* Add padding to create space around the text */
-    border: 1px solid #ccc; /* Add a light gray border */
-    border-radius: 5px; /* Add rounded corners */
+    color: #f7f5f5;
+    padding: 10px; 
+    border: 1px solid #f9f4f4;
+    border-radius: 5px; 
 }
 
-/* Style for the reset button */
-.reset-button {
-    margin-left: 10px;
-    background-color: #7044ff;
-    color: white;
-    text-align: center;
-}
-
-/* Style for the increment button */
-.click-button {
-    background-color: #3880ff;
-    color: white;
-    text-align: center;
+.IonPage {
+    background-color: #c89579;
 }

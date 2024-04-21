@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import './style.css';
+import './Clickcounter.css';
 import {
   IonButton,
   IonCard,
@@ -8,7 +10,9 @@ import {
   IonPage,
   IonTitle,
   IonToolbar,
+  IonIcon, IonLabel
 } from '@ionic/react';
+import { arrowBack, homeOutline } from 'ionicons/icons';
 import './Clickcounter.css';
 
 const ClickCounter: React.FC = () => {
@@ -21,26 +25,34 @@ const ClickCounter: React.FC = () => {
   };
 
   return (
-    <IonPage>
-      {/* Header section with title */}
+    <IonPage className="general-background click-counter-page">
       <IonHeader>
         <IonToolbar>
           <IonTitle>Click Counter</IonTitle>
         </IonToolbar>
       </IonHeader>
-      
+      <IonToolbar>
+      <IonButton routerDirection="root" routerLink="/home">
+          <IonIcon aria-hidden="true" icon={arrowBack} />
+          </IonButton>
+        </IonToolbar>
       <IonContent fullscreen>
+      <div className="home-container">
+      <header>
+        <h1>Click, count, conquer</h1>
+      </header>
         <IonCard>
           <IonCardContent className="click-counter">
+          
             {/* Display click count and reset button side by side */}
             <div className="click-count-reset-container">
               <div className="click-counter-text">Click Count: {clickCount}</div>
               <IonButton
                 onClick={resetClickCount}
-                color="secondary"
+                color="danger"
                 className="reset-button"
               >
-                Reset Counter
+                Reset Count
               </IonButton>
             </div>
 
@@ -51,10 +63,11 @@ const ClickCounter: React.FC = () => {
               expand="full"
               className="click-button"
             >
-              Click Me
+              Click Here
             </IonButton>
           </IonCardContent>
         </IonCard>
+        </div>
       </IonContent>
     </IonPage>
   );
