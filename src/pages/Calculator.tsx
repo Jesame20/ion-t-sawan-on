@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './style.css';
 import { IonGrid, IonRow, IonCol, IonButton, IonInput, IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonIcon, IonLabel, IonBackButton } from '@ionic/react';
 import './Calculator.css';
 import { arrowBack, arrowBackCircleOutline } from 'ionicons/icons';
@@ -23,7 +24,7 @@ const Calculator = () => {
   };
 
   return (
-    <IonPage>
+    <IonPage className="general-background click-counter-page">
      <IonHeader>
         <IonToolbar>
           <IonTitle>Click Counter</IonTitle>

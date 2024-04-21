@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './style.css';
 import {
   IonButton,
   IonCard,
@@ -23,7 +24,7 @@ const ClickCounter: React.FC = () => {
   };
 
   return (
-    <IonPage> 
+    <IonPage className="general-background click-counter-page">
       <IonHeader>
         <IonToolbar>
           <IonTitle>Click Counter</IonTitle>

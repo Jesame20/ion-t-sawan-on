@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './style.css';
 import {
   IonButton,
   IonCard,
@@ -50,7 +51,7 @@ const TodoList: React.FC = () => {
   };
 
   return (
-    <IonPage>
+    <IonPage className="general-background click-counter-page">
       <IonHeader>
         <IonToolbar>
           <IonTitle>ToDo List</IonTitle>

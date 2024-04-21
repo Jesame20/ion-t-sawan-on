@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './style.css';
 import {
   IonPage,
   IonHeader,
@@ -18,33 +19,32 @@ const Profile: React.FC = () => {
   const [showClickMeAlert, setShowClickMeAlert] = useState(false);
   const [showActionSheet, setShowActionSheet] = useState(false);
 
-  // Handler functions for buttons and actions
   const handleEditProfile = () => {
     console.log('Edit profile');
-    // Add your code to handle profile editing
+
   };
 
   const handleChangeProfilePicture = () => {
     console.log('Change profile picture');
-    // Add your code to handle changing the profile picture
   };
+
 
   const handleChangeCoverPhoto = () => {
     console.log('Change cover photo');
-    // Add your code to handle changing the cover photo
+
   };
 
   const handleDeleteProfile = () => {
     console.log('Delete profile');
-    // Add your code to handle deleting the profile
+   
   };
 
   const handleCreateAnotherProfile = () => {
     console.log('Create another profile');
-    // Add your code to handle creating another profile
+
   };
 
-  // Array of image URLs for user's posts
+
   const postImages = [
     '../src/assets/img/1.jpg',
     '../src/assets/img/2.jpg',
@@ -53,7 +53,7 @@ const Profile: React.FC = () => {
   ];
 
   return (
-    <IonPage>
+    <IonPage className="general-background click-counter-page">
       <IonHeader>
         <IonToolbar>
           <IonTitle>Profile</IonTitle>
