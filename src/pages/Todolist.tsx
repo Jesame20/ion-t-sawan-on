@@ -52,7 +52,7 @@ const TodoList: React.FC = () => {
   };
 
   return (
-    <IonPage className="general-background click-counter-page">
+    <IonPage className="general-background">
       <IonHeader>
         <IonToolbar>
           <IonTitle>ToDo List</IonTitle>

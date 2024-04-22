@@ -12,7 +12,7 @@ import './home.css';
 
   const Home: React.FC = () => {
     return (
-      <IonPage>
+      <IonPage className="general-background">
         <IonHeader>
           <IonToolbar>
             <IonTitle>Home</IonTitle>

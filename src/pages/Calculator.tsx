@@ -24,10 +24,10 @@ const Calculator = () => {
   };
 
   return (
-    <IonPage className="general-background click-counter-page">
+    <IonPage className="general-background">
      <IonHeader>
         <IonToolbar>
-          <IonTitle>Click Counter</IonTitle>
+          <IonTitle>Calculator</IonTitle>
         </IonToolbar>
         <IonToolbar>
       <IonButton routerDirection="root" routerLink="/home">
