@@ -1,4 +1,7 @@
-/* clickcounter.css */
+.clickcounter-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
 
 .click-counter {
     padding: 20px;
@@ -35,8 +38,4 @@ header p {
     padding: 10px; 
     border: 1px solid #f9f4f4;
     border-radius: 5px; 
-}
-
-.IonPage {
-    background-color: #c89579;
 }

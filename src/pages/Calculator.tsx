@@ -36,7 +36,7 @@ const Calculator = () => {
         </IonToolbar>
     </IonHeader>
       <IonContent fullscreen>
-        <div className="home-container" >
+        <div className="calculator-container" >
         <header>
         <h1>Solve equations in a snap</h1>
       </header>

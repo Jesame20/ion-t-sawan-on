@@ -64,7 +64,7 @@ const TodoList: React.FC = () => {
           </IonButton>
         </IonToolbar>
       <IonContent fullscreen>
-      <div className="home-container">
+      <div className="todolist-container">
       <header>
         <h1>Organize, prioritize, conquer</h1>
       </header>

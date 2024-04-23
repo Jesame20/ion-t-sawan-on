@@ -1,3 +1,8 @@
+.calculator-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
 .calculator {
   width: 300px;
   margin: 0 auto;
