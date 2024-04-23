@@ -28,13 +28,11 @@ const Calculator = () => {
      <IonHeader>
         <IonToolbar>
           <IonTitle>Calculator</IonTitle>
-        </IonToolbar>
-        <IonToolbar>
-      <IonButton routerDirection="root" routerLink="/home">
-          <IonIcon aria-hidden="true" icon={arrowBack} />
+          <IonButton routerDirection="root" routerLink="/home" slot="start">
+            <IonIcon aria-hidden="true" icon={arrowBack} />
           </IonButton>
         </IonToolbar>
-    </IonHeader>
+        </IonHeader>
       <IonContent fullscreen>
         <div className="calculator-container" >
         <header>
