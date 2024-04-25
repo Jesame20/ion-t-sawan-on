@@ -106,8 +106,7 @@ const Profile: React.FC = () => {
             message="A message should be a short, complete sentence."
             buttons={['Action']}
           />
-
-          {/* "Actions" button */}
+          
           <IonButton
             id="open-action-sheet"
             expand="full"

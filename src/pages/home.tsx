@@ -1,12 +1,9 @@
 import React from 'react';
 import {
-    //Initial Components
     IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonCardContent,  
     IonCardSubtitle, IonCardTitle, IonCard, IonList, IonItem,IonThumbnail, IonLabel
 } from '@ionic/react';
 import { IonRouterLink } from '@ionic/react';
-
-// CSS
 import './home.css';
 
 

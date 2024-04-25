@@ -29,22 +29,19 @@ const ClickCounter: React.FC = () => {
       <IonHeader>
         <IonToolbar>
           <IonTitle>Click Counter</IonTitle>
-        </IonToolbar>
-      </IonHeader>
-      <IonToolbar>
-      <IonButton routerDirection="root" routerLink="/home">
-          <IonIcon aria-hidden="true" icon={arrowBack} />
+          <IonButton routerDirection="root" routerLink="/home" slot="start">
+            <IonIcon aria-hidden="true" icon={arrowBack} />
           </IonButton>
         </IonToolbar>
+        </IonHeader>
       <IonContent fullscreen>
-      <div className="home-container">
+      <div className="clickcounter-container">
       <header>
         <h1>Click, count, conquer</h1>
       </header>
         <IonCard>
           <IonCardContent className="click-counter">
           
-            {/* Display click count and reset button side by side */}
             <div className="click-count-reset-container">
               <div className="click-counter-text">Click Count: {clickCount}</div>
               <IonButton
@@ -56,7 +53,7 @@ const ClickCounter: React.FC = () => {
               </IonButton>
             </div>
 
-            {/* Button that increments click count */}
+
             <IonButton
               onClick={() => setClickCount(clickCount + 1)}
               color="primary"

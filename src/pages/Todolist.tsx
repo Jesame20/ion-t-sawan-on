@@ -55,16 +55,14 @@ const TodoList: React.FC = () => {
     <IonPage className="general-background">
       <IonHeader>
         <IonToolbar>
-          <IonTitle>ToDo List</IonTitle>
-        </IonToolbar>
-      </IonHeader>
-      <IonToolbar>
-      <IonButton routerDirection="root" routerLink="/home">
-          <IonIcon aria-hidden="true" icon={arrowBack} />
+          <IonTitle>TodoList</IonTitle>
+          <IonButton routerDirection="root" routerLink="/home" slot="start">
+            <IonIcon aria-hidden="true" icon={arrowBack} />
           </IonButton>
         </IonToolbar>
+        </IonHeader>
       <IonContent fullscreen>
-      <div className="home-container">
+      <div className="todolist-container">
       <header>
         <h1>Organize, prioritize, conquer</h1>
       </header>

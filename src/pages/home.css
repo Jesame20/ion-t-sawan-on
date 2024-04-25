@@ -1,11 +1,9 @@
-/* General styles */
 .home-container {
     padding: 20px;
     font-family: Arial, sans-serif;
-    background-color: #bc8a5f;
 }
 
-/* Header styles */
+
 header {
     text-align: center;
     background-color: #dcdee0;
@@ -23,69 +21,11 @@ header p {
     color: #666;
 }
 
-/* Features section styles */
-.features-section {
-    padding: 20px;
-    background-color: #73cffa;
-    margin-bottom: 20px;
-}
-
-.features-section h2 {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-.feature {
-    padding: 10px;
-    border: 1px solid #8c7c7c97;
-    margin-bottom: 10px;
-}
-
-.feature h3 {
-    font-size: 1.5rem;
-    color: #333;
-    font-weight: bold;
-}
-
-.feature p {
-    color: #666;
-    margin-bottom: 10px;
-}
-
-.feature img {
-    width: 100%;
-    height: auto;
-}
-
-/* Footer styles */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #f0f8ff;
-}
-
-footer p {
-    font-size: 1rem;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.social-links a {
-    margin: 0 10px;
-    color: #0077b6;
-    text-decoration: none;
-}
-
-.social-links a:hover {
-    text-decoration: underline;
-}
 ion-card-content {
     background: #0a0a0a;
   }
 
 ion-router-link {
-    --background: #f5f5f5; /* Change this to the color you want */
+    --background: #f5f5f5; 
   }
 
