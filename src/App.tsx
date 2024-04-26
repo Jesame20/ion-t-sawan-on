@@ -15,7 +15,8 @@ import Home from './pages/home';
 import Profile from './pages/Profile';
 import Clickcounter from './pages/Clickcounter';
 import Calculator from './pages/Calculator';
-
+import TodoList from './pages/Todolist';
+import QouteGenerator from './pages/Qoutegenerator';
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
 
@@ -34,7 +35,8 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
-import TodoList from './pages/Todolist';
+import QuoteGenerator from './pages/Qoutegenerator';
+
 
 setupIonicReact();
 
@@ -57,6 +59,9 @@ const App: React.FC = () => (
           </Route>
           <Route exact path="/Todolist">
           <TodoList />
+          </Route>
+          <Route exact path="/Qoutegenerator">
+          <QuoteGenerator />
           </Route>
           <Route exact path="/">
             <Redirect to="/home" />
