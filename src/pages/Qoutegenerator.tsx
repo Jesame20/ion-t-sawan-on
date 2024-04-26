@@ -28,7 +28,7 @@ import {
   IonAvatar,
   IonThumbnail
 } from '@ionic/react';
-
+import { arrowBack, homeOutline } from 'ionicons/icons';
 //Dynamic data reference
 import rizzCard from '../../src/assets/json/rizzCard.json';
 
@@ -65,10 +65,13 @@ const QuoteGenerator: React.FC = () => {
   };
   
   return (
-    <IonPage>
+    <IonPage className="general-background">
       <IonHeader>
         <IonToolbar>
           <IonTitle>Quote Generator</IonTitle>
+          <IonButton routerDirection="root" routerLink="/home" slot="start">
+            <IonIcon aria-hidden="true" icon={arrowBack} />
+            </IonButton>
         </IonToolbar>
       </IonHeader>
       <IonContent className='ion-padding'>
@@ -78,8 +81,11 @@ const QuoteGenerator: React.FC = () => {
           </IonToolbar>
         </IonHeader>
 
-        <img alt="Silhouette of mountains" src="https://pbs.twimg.com/media/F6SEuqhW0AAJxD5.jpg" />
-          {/*Button Trigger*/}
+        <img
+            alt="Silhouette of mountains"
+            src="https://i.kym-cdn.com/photos/images/original/002/578/699/9c8.gif"
+            style={{ display: 'block', margin: '0 auto' }}
+            />
           <IonGrid>
             <IonRow>
                 <IonCol size="" push="">
