@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {
   IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonCardContent,
-  IonCardSubtitle, IonCardTitle, IonCard, IonList, IonItem, IonThumbnail, IonLabel,
+  IonCard, IonList, IonItem, IonThumbnail, IonLabel,
   IonSearchbar
 } from '@ionic/react';
 import { IonRouterLink } from '@ionic/react';
