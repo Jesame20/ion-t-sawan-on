@@ -27,10 +27,10 @@ const cardData = [
     link: '/Todolist'
   },
   {
-    title: 'Blank',
-    icon: 'https://ionicframework.com/docs/img/demos/thumbnail.svg',
+    title: 'Qoute Generator',
+    icon: 'https://www.kindpng.com/picc/m/215-2151039_online-boiler-quote-online-quotation-icon-hd-png.png',
     subtitle: 'Applet #4',
-    link: ''
+    link: '/Qoutegenerator'
   }
 ];
 
