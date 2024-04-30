@@ -31,7 +31,14 @@ const cardData = [
     icon: 'https://www.kindpng.com/picc/m/215-2151039_online-boiler-quote-online-quotation-icon-hd-png.png',
     subtitle: 'Applet #4',
     link: '/Qoutegenerator'
+  },
+  {
+    title: 'notes',
+    icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWHir7MNRUzSV7t9qIWADMteoLORYFQJAyhs_JW27VdoDjnGJWUnKqh1oXwr0Nw1-uZZo&usqp=CAU',
+    subtitle: 'Applet #5',
+    link: '/notes'
   }
+      
 ];
 
 const Home: React.FC = () => {
