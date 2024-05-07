@@ -160,7 +160,7 @@ const deleteNote = async (index: number) => {
             <IonCardTitle>
               <IonInput
                 placeholder="Type something here"
-                label="Title"
+                label="Task"
                 id="custom-input"
                 labelPlacement="floating"
                 counter={true}
