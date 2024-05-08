@@ -28,26 +28,26 @@ import {
   IonAvatar,
   IonThumbnail
 } from '@ionic/react';
-import { arrowBack, homeOutline } from 'ionicons/icons';
-//Dynamic data reference
-import rizzCard from '../../src/assets/json/rizzCard.json';
+import { arrowBack} from 'ionicons/icons';
+import { getDocs, collection } from 'firebase/firestore';
+import { db } from './firebase';
 
 const QuoteGenerator: React.FC = () => {
-
+  const [quotes, setQuotes] = useState<string[]>([]);
   const [showAlert, setShowAlert] = useState(false);
-  const [randomIndex, setRandomIndex] =  useState<number | null>(null); // State to store random index
+  const [randomIndex, setRandomIndex] =  useState<number | null>(null);
 
   // Function to generate a random index
   const generateRandomIndex = () => {
-    return Math.floor(Math.random() * rizzCard.length);
+    return Math.floor(Math.random() * quotes.length);
   };
 
   // Function to generate a random message
   const renderRandomMessage = () => {
-    if (randomIndex !== null) {
-      return rizzCard[randomIndex].message;
+    if (randomIndex!== null) {
+      return quotes[randomIndex];
     } else {
-      return ''; // Return empty string if randomIndex is null
+      return '';
     }
   };
 
@@ -60,9 +60,18 @@ const QuoteGenerator: React.FC = () => {
 
   // Function to handle closing of the alert
   const handleAlertDismiss = () => {
-    setRandomIndex(0); // Reset the index to 0
-    setShowAlert(false); // Hide the alert
+    setRandomIndex(0);
+    setShowAlert(false);
   };
+
+  // Read Firebase Data
+  useState(() => {
+    const q = collection(db, 'Qoutegenerator');
+    getDocs(q).then((snapshot) => {
+      const quotesArray = snapshot.docs.map(doc => doc.data().Qoute);
+      setQuotes(quotesArray);
+    });
+  }, );
   
   return (
     <IonPage className="general-background">
