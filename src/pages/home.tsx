@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import {
   IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonCardContent,
-  IonCard, IonList, IonItem, IonThumbnail, IonLabel,
-  IonSearchbar
+  IonCard, IonList, IonItem, IonThumbnail, IonLabel, IonSearchbar
 } from '@ionic/react';
 import { IonRouterLink } from '@ionic/react';
 import './home.css';
@@ -38,7 +37,6 @@ const cardData = [
     subtitle: 'Applet #5',
     link: '/ionic-t-sawan-on/notes'
   }
-      
 ];
 
 const Home: React.FC = () => {
@@ -67,15 +65,15 @@ const Home: React.FC = () => {
                 {cardData
                   .filter((card) => card.title.toLowerCase().includes(searchTerm.toLowerCase()))
                   .map((card, index) => (
-                    <IonRouterLink key={index} href={card.link}>
+                    <IonCard key={index} routerLink={card.link} routerDirection='forward'>
                       <IonItem>
                         <IonThumbnail slot="start">
                           <img alt="Silhouette of mountains" src={card.icon} />
                         </IonThumbnail>
                         <IonLabel>{card.title}</IonLabel>
                       </IonItem>
-                    </IonRouterLink>
-                ))}
+                    </IonCard>
+                  ))}
               </IonList>
             </IonCardContent>
           </IonCard>
