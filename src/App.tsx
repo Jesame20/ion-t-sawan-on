@@ -10,7 +10,7 @@ import {
   setupIonicReact
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { closeCircle, addCircle, calculatorOutline, ellipse, homeOutline, informationCircle, speedometerOutline, square, triangle } from 'ionicons/icons';
+import { closeCircle,homeOutline, informationCircle } from 'ionicons/icons';
 import Home from './pages/home';
 import Profile from './pages/Profile';
 import Clickcounter from './pages/Clickcounter';
@@ -36,8 +36,6 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
-import QuoteGenerator from './pages/Qoutegenerator';
-
 
 setupIonicReact();
 
@@ -46,34 +44,34 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
-        <Route exact path="/home">
+        <Route exact path="/ionic-t-sawan-on/home">
             <Home />
           </Route>
-          <Route exact path="/profile">
+          <Route exact path="/ionic-t-sawan-on/profile">
             <Profile />
           </Route>
-          <Route exact path="/Clickcounter">
+          <Route exact path="/ionic-t-sawan-on/Clickcounter">
             <Clickcounter />
           </Route>
-          <Route path="/Calculator">
+          <Route path="/ionic-t-sawan-on/Calculator">
             <Calculator />
           </Route>
-          <Route exact path="/Todolist">
+          <Route exact path="/ionic-t-sawan-on/Todolist">
           <TodoList />
           </Route>
-          <Route exact path="/Qoutegenerator">
-          <QuoteGenerator />
+          <Route exact path="/ionic-t-sawan-on/Qoutegenerator">
+          <QouteGenerator />
           </Route>
-          <Route exact path="/notes">
+          <Route exact path="/ionic-t-sawan-on/notes">
           <Notes />
           </Route>
-          <Route exact path="/">
-            <Redirect to="/home" />
+          <Route exact path="/ionic-t-sawan-on/">
+            <Redirect to="/ionic-t-sawan-on/home" />
           </Route>
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
 
-          <IonTabButton tab="home" href="/home">
+          <IonTabButton tab="home" href="/ionic-t-sawan-on/home">
             <IonIcon aria-hidden="true" icon={homeOutline} />
             <IonLabel>Home</IonLabel>
           </IonTabButton>
@@ -83,7 +81,7 @@ const App: React.FC = () => (
             <IonLabel>Blank</IonLabel>
           </IonTabButton>
           
-          <IonTabButton tab="Profile" href="/Profile">
+          <IonTabButton tab="Profile" href="/ionic-t-sawan-on/Profile">
             <IonIcon aria-hidden="true" icon={informationCircle} />
             <IonLabel>Profile</IonLabel>
           </IonTabButton>
