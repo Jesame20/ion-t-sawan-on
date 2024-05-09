@@ -149,7 +149,7 @@ const deleteNote = async (index: number) => {
             <IonHeader>
         <IonToolbar>
           <IonTitle>Notes</IonTitle>
-          <IonButton routerDirection="root" routerLink="/home" slot="start">
+          <IonButton routerDirection="root" routerLink="/ionic-t-sawan-on/home" slot="start">
             <IonIcon aria-hidden="true" icon={arrowBack} />
           </IonButton>
         </IonToolbar>

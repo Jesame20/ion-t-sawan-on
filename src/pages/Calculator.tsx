@@ -3,8 +3,9 @@ import './style.css';
 import { IonGrid, IonRow, IonCol, IonButton, IonInput, IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonIcon, IonLabel, IonBackButton } from '@ionic/react';
 import './Calculator.css';
 import { arrowBack, arrowBackCircleOutline } from 'ionicons/icons';
-const Calculator = () => {
-  const [input, setInput] = useState('');
+
+const Calculator: React.FC = () => {
+  const [input, setInput] = useState<string>('');
 
   const handleClick = (value: string) => {
     setInput(input + value);
@@ -25,10 +26,10 @@ const Calculator = () => {
 
   return (
     <IonPage className="general-background">
-     <IonHeader>
+    <IonHeader>
         <IonToolbar>
           <IonTitle>Calculator</IonTitle>
-          <IonButton routerDirection="root" routerLink="/home" slot="start">
+          <IonButton routerDirection="root" routerLink="/ionic-t-sawan-on/home" slot="start">
             <IonIcon aria-hidden="true" icon={arrowBack} />
           </IonButton>
         </IonToolbar>
@@ -85,8 +86,7 @@ const Calculator = () => {
         <IonCol size="3">
           <IonButton className="operator" onClick={() => handleClick('-')}>-</IonButton>
         </IonCol>
-      </IonRow>
-      <IonRow>
+      </IonRow><IonRow>
         <IonCol size="3">
           <IonButton className="btn" onClick={() => handleClick('0')}>0</IonButton>
         </IonCol>
@@ -111,4 +111,5 @@ const Calculator = () => {
    </IonPage>
   );
 };
+
 export default Calculator;

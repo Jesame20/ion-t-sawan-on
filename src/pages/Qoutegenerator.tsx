@@ -78,7 +78,7 @@ const QuoteGenerator: React.FC = () => {
       <IonHeader>
         <IonToolbar>
           <IonTitle>Quote Generator</IonTitle>
-          <IonButton routerDirection="root" routerLink="/home" slot="start">
+          <IonButton routerDirection="root" routerLink="/ionic-t-sawan-on/home" slot="start">
             <IonIcon aria-hidden="true" icon={arrowBack} />
             </IonButton>
         </IonToolbar>

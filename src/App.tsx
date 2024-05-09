@@ -10,7 +10,7 @@ import {
   setupIonicReact
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { closeCircle, addCircle, calculatorOutline, ellipse, homeOutline, informationCircle, speedometerOutline, square, triangle } from 'ionicons/icons';
+import { closeCircle,homeOutline, informationCircle } from 'ionicons/icons';
 import Home from './pages/home';
 import Profile from './pages/Profile';
 import Clickcounter from './pages/Clickcounter';
@@ -36,8 +36,6 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
-import QuoteGenerator from './pages/Qoutegenerator';
-
 
 setupIonicReact();
 
@@ -62,7 +60,7 @@ const App: React.FC = () => (
           <TodoList />
           </Route>
           <Route exact path="/ionic-t-sawan-on/Qoutegenerator">
-          <QuoteGenerator />
+          <QouteGenerator />
           </Route>
           <Route exact path="/ionic-t-sawan-on/notes">
           <Notes />

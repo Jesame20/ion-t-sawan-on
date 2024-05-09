@@ -12,31 +12,31 @@ const cardData = [
     title: 'Click Counter',
     icon: 'https://img.freepik.com/premium-vector/click-arrow-touch-point-logo-template-design-vector-emblem-design-concept-creative-symbol_20029-363.jpg',
     subtitle: 'Applet #1',
-    link: '/Clickcounter'
+    link: '/ionic-t-sawan-on/Clickcounter'
   },
   {
     title: 'Calculator',
     icon: 'https://cdn-icons-png.flaticon.com/512/1011/1011863.png',
     subtitle: 'Applet #2',
-    link: '/Calculator'
+    link: '/ionic-t-sawan-on/Calculator'
   },
   {
     title: 'Todo List',
     icon: 'https://cdn-icons-png.flaticon.com/512/7692/7692809.png',
     subtitle: 'Applet #3',
-    link: '/Todolist'
+    link: '/ionic-t-sawan-on/Todolist'
   },
   {
     title: 'Qoute Generator',
     icon: 'https://www.kindpng.com/picc/m/215-2151039_online-boiler-quote-online-quotation-icon-hd-png.png',
     subtitle: 'Applet #4',
-    link: '/Qoutegenerator'
+    link: '/ionic-t-sawan-on/Qoutegenerator'
   },
   {
     title: 'notes',
     icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWHir7MNRUzSV7t9qIWADMteoLORYFQJAyhs_JW27VdoDjnGJWUnKqh1oXwr0Nw1-uZZo&usqp=CAU',
     subtitle: 'Applet #5',
-    link: '/notes'
+    link: '/ionic-t-sawan-on/notes'
   }
       
 ];
@@ -84,5 +84,4 @@ const Home: React.FC = () => {
     </IonPage>
   );
 };
-
 export default Home;

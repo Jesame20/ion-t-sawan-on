@@ -66,13 +66,13 @@ const Profile: React.FC = () => {
     <div className="cover-photo">
       <img alt="Cover Photo" src="../src/assets/img/cover.jpg" />
     </div>
-    {/* Profile container */}
+    
     <div className="profile-info-container">
-      {/* Profile picture */}
+    
       <IonAvatar className="profile-picture">
-        <img alt="Profile Picture" src="../src/assets/img/jprof.jpg" />
+        <img alt="Profile Picture" src="..\src\assets\img\jprof.jpg" />
       </IonAvatar>
-      {/* User info */}
+      
       <div className="profile-info">
         <h2>Jesame C. Sawan-on</h2>
         <p>Motto in Life: "If you can DREAM it, you can DO it"</p>
