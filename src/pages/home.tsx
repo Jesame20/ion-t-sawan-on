@@ -75,6 +75,7 @@ const Home: React.FC = () => {
                     </IonCard>
                   ))}
               </IonList>
+              
             </IonCardContent>
           </IonCard>
         </div>
