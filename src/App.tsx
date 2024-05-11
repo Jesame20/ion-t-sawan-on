@@ -1,4 +1,6 @@
+import React from 'react';
 import { Redirect, Route } from 'react-router-dom';
+import {  home, informationCircle, calculator, closeCircle } from 'ionicons/icons'; // Import necessary icons
 import {
   IonApp,
   IonIcon,
@@ -10,13 +12,11 @@ import {
   setupIonicReact
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { calculatorOutline, ellipse, home, personOutline, speedometerOutline, square, triangle } from 'ionicons/icons';
-
 import Home from './pages/home';
 import Profile from './pages/Profile';
-import ClickCounter from './pages/Clickcounter'; 
-import Calculator from './pages/Calculator';
-import Todolist from './pages/Todolist';
+import Tab2 from './pages/Clickcounter';
+import Tab3 from './pages/Calculator';
+import ToDoList from './pages/Todolist';
 import QuoteGenerator from './pages/Qoutegenerator';
 import Notes from './pages/notes';
 
@@ -46,55 +46,42 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
-          
-          {/* Application default route */}
-           <Route exact path="/ionic-t-sawan-on/">
-            <Redirect to="/ionic-t-sawan-on/home" />
-          </Route>
-
           <Route exact path="/ionic-t-sawan-on/home">
             <Home />
           </Route>
-
           <Route exact path="/ionic-t-sawan-on/Profile">
             <Profile />
           </Route>
           <Route exact path="/ionic-t-sawan-on/Clickcounter">
-            <ClickCounter />
+            <Tab2 />
           </Route>
-          <Route path="/ionic-t-sawan-on/Calculator">
-            <Calculator />
+          <Route exact path="/ionic-t-sawan-on/Calculator">
+            <Tab3 />
+            </Route>
+          <Route exact path="/ionic-t-sawan-on/Todolist">
+            <ToDoList />
           </Route>
-
-          <Route path="/ionic-t-sawan-on/Todolist">
-            <Todolist />
-          </Route>
-
           <Route path="/ionic-t-sawan-on/Qoutegenerator">
             <QuoteGenerator />
           </Route>
-
           <Route path="/ionic-t-sawan-on/notes">
             <Notes />
           </Route>
-
+          
+          <Route exact path="/ionic-t-sawan-on/">
+            <Redirect to="/ionic-t-sawan-on/home" />
+          </Route>
         </IonRouterOutlet>
-
-      {/* Tab Buttons */}
         <IonTabBar slot="bottom">
-
           <IonTabButton tab="home" href="/ionic-t-sawan-on/home">
             <IonIcon aria-hidden="true" icon={home} />
             <IonLabel>Home</IonLabel>
           </IonTabButton>
-       
-          <IonTabButton tab="profile" href="/ionic-t-sawan-on/Profile">
-            <IonIcon aria-hidden="true" icon={personOutline} />
+          <IonTabButton tab="Profile" href="/ionic-t-sawan-on/Profile">
+            <IonIcon aria-hidden="true" icon={informationCircle} />
             <IonLabel>Profile</IonLabel>
           </IonTabButton>
-      
         </IonTabBar>
-
       </IonTabs>
     </IonReactRouter>
   </IonApp>
