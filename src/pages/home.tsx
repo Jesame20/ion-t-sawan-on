@@ -38,7 +38,7 @@ const cardData = [
     title: 'Click Counter',
     icon: speedometerOutline,
     subtitle: 'Applet #1',
-    link: '/ionic-t-sawan-on/Clickcounter',
+    link: '/ionic-t-sawan-on/clickcounter',
     tags: {
       tag1: logoIonic,
       tag2: logoReact
