@@ -88,49 +88,63 @@ const cardData = [
   }
   
 ];
-
 const Home: React.FC = () => {
+  {/*Dynamic Search*/}
   const [searchTerm, setSearchTerm] = useState<string>('');
-
-  return (
-    <IonPage className="general-background">
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>Home</IonTitle>
-        </IonToolbar>
-      </IonHeader>
-      <IonContent fullscreen>
-        <div className="home-container">
-          <header>
-            <h1>Welcome to My App</h1>
-            <p>Your one-stop solution for all your needs.</p>
-          </header>
-          <IonCard>
-            <IonCardContent>
-              <IonSearchbar
-                value={searchTerm}
-                onIonInput={(e) => setSearchTerm(e.target.value ?? '')}
-              />
-              <IonList>
-                {cardData
-                  .filter((card) => card.title.toLowerCase().includes(searchTerm.toLowerCase()))
-                  .map((card, index) => (
-                    <IonCard key={index} routerLink={card.link} routerDirection='forward'>
-                      <IonItem>
-                        <IonThumbnail slot="start">
-                          <img alt="Silhouette of mountains" src={card.icon} />
-                        </IonThumbnail>
-                        <IonLabel>{card.title}</IonLabel>
-                      </IonItem>
-                    </IonCard>
-                  ))}
-              </IonList>
-              
-            </IonCardContent>
-          </IonCard>
-        </div>
-      </IonContent>
-    </IonPage>
-  );
+  
+    return (
+      <IonPage>
+        <IonHeader>
+          <IonToolbar>
+            <IonTitle>Home</IonTitle>
+          </IonToolbar>
+        </IonHeader>
+        <IonContent fullscreen>
+          <IonHeader collapse="condense">
+            <IonToolbar>
+              <IonTitle size="large">Home</IonTitle>
+            </IonToolbar>
+          </IonHeader>
+          
+          {/*Dynamic Search*/}
+          <IonSearchbar 
+            value={searchTerm} 
+            onIonInput={(e) => setSearchTerm(e.target.value ?? '')} 
+          />
+          
+          {cardData
+            .filter((card) => card.title.toLowerCase().includes(searchTerm.toLowerCase()))
+            .map((card, index) => (
+              <IonCard key={index} routerLink={card.link} routerDirection='forward'>
+                <IonCardHeader>
+                  <IonCardTitle>
+                    <IonGrid>
+                      <IonRow>
+                        <IonCol size="2">
+                          <IonIcon className="home-card-icon" icon={card.icon} color="primary" />
+                        </IonCol>
+                        <IonCol size="auto">
+                            <div className="home-card-title">{card.title}</div>
+                            <IonCardSubtitle>{card.subtitle}</IonCardSubtitle>
+                            {card.tags && Object.entries(card.tags).map(([key, icon], i) => (
+                              <IonIcon
+                                key={i}
+                                className="home-card-subicon"
+                                icon={icon}
+                                color="primary" // Set color as needed
+                              />
+                            ))}
+                          </IonCol>
+                      </IonRow>
+                    </IonGrid>
+                  </IonCardTitle>
+                </IonCardHeader>
+              </IonCard>
+          ))}
+        </IonContent>
+      </IonPage>
+    );
 };
+  
 export default Home;
+  
