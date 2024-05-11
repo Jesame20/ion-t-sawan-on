@@ -149,9 +149,9 @@ const deleteNote = async (index: number) => {
             <IonHeader>
         <IonToolbar>
           <IonTitle>Todolist</IonTitle>
-          <IonButtons slot='start'>
-              <IonBackButton defaultHref='/app/home'/>
-           </IonButtons>
+          <IonButton routerDirection="root" routerLink="/ionic-t-sawan-on/home" slot="start">
+            <IonIcon aria-hidden="true" icon={arrowBack} />
+            </IonButton>
         </IonToolbar>
         </IonHeader>
       <IonContent className="ion-padding">

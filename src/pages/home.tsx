@@ -1,42 +1,92 @@
 import React, { useState } from 'react';
 import {
-  IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonCardContent,
-  IonCard, IonList, IonItem, IonThumbnail, IonLabel, IonSearchbar
+  IonBackButton,
+  IonButton,
+  IonButtons,
+  IonCard,
+  IonCardContent,
+  IonCardHeader,
+  IonCardSubtitle,
+  IonCardTitle,
+  IonCol,
+  IonContent,
+  IonGrid,
+  IonHeader,
+  IonIcon,
+  IonInput,
+  IonItem,
+  IonLabel,
+  IonList,
+  IonPage,
+  IonRow,
+  IonTitle,
+  IonToolbar,
+  IonItemDivider,
+  IonSearchbar,
+  IonBadge,
+  IonThumbnail
 } from '@ionic/react';
-import { IonRouterLink } from '@ionic/react';
+
+//Custom CSS
 import './home.css';
+
+//Ionic Icons
+import { speedometerOutline,calculator,pencil, chatbubble, readerOutline, logoIonic,logoFirebase, logoReact} from 'ionicons/icons';
 
 const cardData = [
   {
     title: 'Click Counter',
-    icon: 'https://img.freepik.com/premium-vector/click-arrow-touch-point-logo-template-design-vector-emblem-design-concept-creative-symbol_20029-363.jpg',
+    icon: speedometerOutline,
     subtitle: 'Applet #1',
-    link: '/ionic-t-sawan-on/Clickcounter'
+    link: '/ionic-t-sawan-on/Clickcounter',
+    tags: {
+      tag1: logoIonic,
+      tag2: logoReact
+    }
+
   },
   {
     title: 'Calculator',
-    icon: 'https://cdn-icons-png.flaticon.com/512/1011/1011863.png',
+    icon: calculator,
     subtitle: 'Applet #2',
-    link: '/ionic-t-sawan-on/Calculator'
+    link: '/ionic-t-sawan-on/Calculator',
+    tags: {
+      tag1: logoIonic,
+      tag2: logoReact
+    }
   },
   {
-    title: 'Todo List',
-    icon: 'https://cdn-icons-png.flaticon.com/512/7692/7692809.png',
+    title: 'To Do List',
+    icon: pencil,
     subtitle: 'Applet #3',
-    link: '/ionic-t-sawan-on/Todolist'
+    link: '/ionic-t-sawan-on/Todolist',
+    tags: {
+      tag1: logoIonic,
+      tag2: logoReact
+    }
   },
   {
-    title: 'Qoute Generator',
-    icon: 'https://www.kindpng.com/picc/m/215-2151039_online-boiler-quote-online-quotation-icon-hd-png.png',
+    title: 'Quote Generator',
+    icon: chatbubble,
     subtitle: 'Applet #4',
-    link: '/ionic-t-sawan-on/Qoutegenerator'
+    link: '/ionic-t-sawan-on/Qoutegenerator',
+    tags: {
+      tag1: logoIonic,
+      tag2: logoReact
+    }
   },
   {
-    title: 'notes',
-    icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWHir7MNRUzSV7t9qIWADMteoLORYFQJAyhs_JW27VdoDjnGJWUnKqh1oXwr0Nw1-uZZo&usqp=CAU',
+    title: 'Notes',
+    icon: readerOutline,
     subtitle: 'Applet #5',
-    link: '/ionic-t-sawan-on/notes'
+    link: '/ionic-t-sawan-on/notes',
+    tags: {
+      tag1: logoIonic,
+      tag2: logoReact, 
+      tag3: logoFirebase 
+    }
   }
+  
 ];
 
 const Home: React.FC = () => {
