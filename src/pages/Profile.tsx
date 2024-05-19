@@ -46,10 +46,10 @@ const Profile: React.FC = () => {
 
 
   const postImages = [
-    '../src/assets/img/1.jpg',
-    '../src/assets/img/2.jpg',
-    '../src/assets/img/3.jpg',
-    '../src/assets/img/4.jpg',
+    '../ionic-t-sawan-on/src/assets/img/1.jpg',
+    '../ionic-t-sawan-on/src/assets/img/2.jpg',
+    '../ionic-t-sawan-on/src/assets/img/3.jpg',
+    '../ionic-t-sawan-on/src/assets/img/4.jpg',
   ];
 
   return (
@@ -64,13 +64,13 @@ const Profile: React.FC = () => {
   {/* Cover photo */}
   <div className="profile-cover-container">
     <div className="cover-photo">
-      <img alt="Cover Photo" src="../src/assets/img/cover.jpg" />
+      <img alt="Cover Photo" src="../ionic-t-sawan-on/src/assets/img/cover.jpg" />
     </div>
     
     <div className="profile-info-container">
     
       <IonAvatar className="profile-picture">
-        <img alt="Profile Picture" src="..\src\assets\img\jprof.jpg" />
+        <img alt="Profile Picture" src="../ionic-t-sawan-on/src/assets/img/jprof.jpg" />
       </IonAvatar>
       
       <div className="profile-info">
@@ -101,9 +101,8 @@ const Profile: React.FC = () => {
           <IonAlert
             isOpen={showClickMeAlert}
             onDidDismiss={() => setShowClickMeAlert(false)}
-            header="A Short Title Is Best"
-            subHeader="A Sub Header Is Optional"
-            message="A message should be a short, complete sentence."
+            header="Getting to know me"
+            message="I am a crybaby"
             buttons={['Action']}
           />
           

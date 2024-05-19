@@ -1,12 +1,12 @@
 {
-  "name": "ion-t-sawan-on",
+  "name": "ionic-t-sawan-on",
   "private": true,
   "version": "0.0.1",
   "type": "module",
   "homepage": "https://Jesame20.github.io/ionic-t-sawan-on/",
   "scripts": {
-      "predeploy" : "npm run build",
-      "deploy" : "gh-pages -d dist",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
@@ -42,7 +42,7 @@
     "jsdom": "^22.1.0",
     "terser": "^5.4.0",
     "typescript": "^5.1.6",
-    "vite": "^5.2.11",
+    "vite": "5.2.11",
     "vitest": "^0.34.6"
   },
   "description": "An Ionic project"
